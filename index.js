@@ -1,6 +1,9 @@
 var app = require('express')();
+var express3 = require('express3')
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
+
+app.use(express3.basicAuth(process.env.USER || 'trade', process.env.PASS || 'mark'));
 
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
