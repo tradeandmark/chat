@@ -1,0 +1,30 @@
+{
+  "name": "chat",
+  "scripts": {
+  },
+  "env": {
+    "PASS": {
+      "required": true
+    },
+    "TM_ISHEROKU": {
+      "required": true
+    },
+    "USER": {
+      "required": true
+    },
+    "TM_ISHEROKUSTAGING": "yes"
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
