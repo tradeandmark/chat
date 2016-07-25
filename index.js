@@ -21,6 +21,7 @@ io.on('connection', function(socket){
     io.emit('chat message', '<strong style="color:blue">A user disconnected</strong>')
   })
   socket.on('chat message', function(msg){
+    UserCheck()
     if (msg.message == '') {
       return
     }
@@ -28,7 +29,7 @@ io.on('connection', function(socket){
       var col = '#'+Math.floor(Math.random()*16777215).toString(16)
       Colours[msg.user] = col
     }
-    msg.message = msg.message.replace(/script/igm, 'scrip_t').replace('on', 'o_n')
+    msg.message = msg.message.replace(/script/igm, 'scrip_t').replace(/on/igm, 'o_n')
     console.log('message: ' + msg.message + '(' + msg.user + ')')
     io.emit('chat message', '<strong style="color:' + Colours[msg.user] + '">' + msg.user + '</strong> ' + msg.message)
   })
