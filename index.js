@@ -16,6 +16,7 @@ app.get('/styles.css', function(req, res) {
 })
 
 io.on('connection', function(socket){
+  UserCheck()
   console.log('a user connected')
   io.emit('chat message', '<strong style="color:red">A user connected</strong>')
   socket.on('disconnect', function(){
