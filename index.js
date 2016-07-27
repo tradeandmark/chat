@@ -7,13 +7,17 @@ var Colours = [], Users = [];
 
 app.use(express3.basicAuth(process.env.USER || 'trade', process.env.PASS || 'mark'))
 
-app.get('/', function(req, res){
+app.get('/', function(req, res) {
   res.sendFile(__dirname + '/index.html')
 })
 
+app.get('/styles.css', function(req, res) {
+  res.sendFile(__dirname + '/styles.css')
+})
+
 io.on('connection', function(socket){
-  console.log('a user connected')
   UserCheck()
+  console.log('a user connected')
   io.emit('chat message', '<strong style="color:red">A user connected</strong>')
   socket.on('disconnect', function(){
     UserCheck()
