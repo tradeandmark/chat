@@ -1,4 +1,5 @@
 var request = require('request')
+var fs = require('fs')
 var index = require('./index')
 
 request('http://localhost:3238/', function (error, response, body) {
