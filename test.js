@@ -1,3 +1,5 @@
+/* eslint no-process-exit: 0 */
+
 var request = require('request')
 var fs = require('fs')
 var index = require('./index')
