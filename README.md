@@ -1,4 +1,6 @@
 # Chat
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/tradeandmark/chat.svg)](https://greenkeeper.io/)
 A simple chat app powered by Socket.IO, ready for Heroku
 
 ## Statuses
