@@ -1,5 +1,7 @@
-version: v1.5.0
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.7.1
 ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:negotiator:20160616':
     - socket.io > engine.io > accepts > negotiator:
@@ -13,3 +15,38 @@ patch:
         patched: '2016-07-28T08:04:17.075Z'
     - socket.io > socket.io-client > engine.io-client > ws:
         patched: '2016-07-28T08:04:17.075Z'
+  'npm:ms:20170412':
+    - express3 > express > connect > debug > ms:
+        patched: '2017-05-25T07:43:05.913Z'
+    - socket.io > socket.io-adapter > debug > ms:
+        patched: '2017-05-25T07:43:05.913Z'
+    - socket.io > socket.io-client > debug > ms:
+        patched: '2017-05-25T07:43:05.913Z'
+    - express3 > express > debug > ms:
+        patched: '2017-05-25T07:43:05.913Z'
+    - express3 > express > send > debug > ms:
+        patched: '2017-05-25T07:43:05.913Z'
+    - express3 > express > connect > body-parser > debug > ms:
+        patched: '2017-05-25T07:43:05.913Z'
+    - express3 > express > connect > compression > debug > ms:
+        patched: '2017-05-25T07:43:05.913Z'
+    - express3 > express > connect > connect-timeout > debug > ms:
+        patched: '2017-05-25T07:43:05.913Z'
+    - express3 > express > connect > serve-favicon > ms:
+        patched: '2017-05-25T07:43:05.913Z'
+    - express3 > express > connect > express-session > debug > ms:
+        patched: '2017-05-25T07:43:05.913Z'
+    - express3 > express > connect > finalhandler > debug > ms:
+        patched: '2017-05-25T07:43:05.913Z'
+    - express3 > express > connect > morgan > debug > ms:
+        patched: '2017-05-25T07:43:05.913Z'
+    - express3 > express > connect > serve-index > debug > ms:
+        patched: '2017-05-25T07:43:05.913Z'
+    - express3 > express > connect > serve-static > send > debug > ms:
+        patched: '2017-05-25T07:43:05.913Z'
+    - express3 > express > send > ms:
+        patched: '2017-05-25T07:43:05.913Z'
+    - express3 > express > connect > connect-timeout > ms:
+        patched: '2017-05-25T07:43:05.913Z'
+    - express3 > express > connect > serve-static > send > ms:
+        patched: '2017-05-25T07:43:05.913Z'
