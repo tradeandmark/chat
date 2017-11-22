@@ -1,7 +1,7 @@
 {
   "name": "tradeandmark-chat",
   "version": "0.2.0",
-  "description": "",
+  "description": "A simple chat app powered by Socket.IO, ready for Heroku",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

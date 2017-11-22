@@ -1,3 +1,0 @@
-approvals = 2
-pattern = ":\\+1:|LGTM|lgtm|:shipit:"
-self_approval_off = false
