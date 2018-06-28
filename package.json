@@ -5,16 +5,20 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "node test.js"
+    "test": "node test.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "tradeandmark",
   "dependencies": {
     "express": "^4.16.2",
     "express3": "^0.0.0",
     "socket.io": "^2.0.4",
-    "request": "^2.83.0"
+    "request": "^2.83.0",
+    "snyk": "^1.85.0"
   },
   "engines": {
     "node": "10"
-  }
+  },
+  "snyk": true
 }
